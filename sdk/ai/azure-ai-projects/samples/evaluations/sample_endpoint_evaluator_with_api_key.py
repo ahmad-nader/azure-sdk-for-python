@@ -36,7 +36,7 @@ DESCRIPTION:
           "schema_version": "0.0.1",
           "score": 0.85,
           "reason": "Response is accurate and concise.",
-          "status": "completed",
+          "status": "Completed",
           "properties": {"model_used": "gpt-4o", "custom_flag": true},
           "threshold": null,
           "passed": true
@@ -74,9 +74,9 @@ from azure.ai.projects import AIProjectClient
 from azure.ai.projects.models import (
     EndpointBasedEvaluatorDefinition,
     EvaluatorCategory,
+    EvaluatorMetric,
     EvaluatorType,
     EvaluatorVersion,
-    EvaluatorMetric,
 )
 from azure.mgmt.cognitiveservices import CognitiveServicesManagementClient
 from azure.mgmt.cognitiveservices.models import ConnectionPropertiesV2BasicResource

@@ -502,6 +502,8 @@ class EvaluatorDefinitionType(str, Enum, metaclass=CaseInsensitiveEnumMeta):
     RUBRIC = "rubric"
     """Rubric-based evaluator definition. Stores dimensions (the scoring blueprint) for both quality
     and safety evaluators. Can be created via the generate API or manually via createVersion."""
+    ENDPOINT = "endpoint"
+    """Endpoint-based evaluator definition using a custom HTTP endpoint."""
 
 
 class EvaluatorGenerationJobSourceType(str, Enum, metaclass=CaseInsensitiveEnumMeta):
